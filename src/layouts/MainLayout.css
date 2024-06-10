@@ -1,0 +1,6 @@
+.main-layout {
+    background-image: url("../images/background.jpg"); /* Path to your photo */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background */
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+}

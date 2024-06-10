@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #282c34;
+    color: white;
+    position: relative;  /* Ensure the parent container has relative positioning */
+}
+
+.menu-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.auth-links {
+    position: absolute;  /* Positioning it absolutely */
+    top: 10px;           /* Align to the top */
+    right: 20px;         /* Align to the right */
+    display: flex;
+}
+
+.auth-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
