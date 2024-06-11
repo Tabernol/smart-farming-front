@@ -1,5 +1,5 @@
 import {Outlet} from "react-router-dom";
-import Menu from "../components/Menu";
+import Menu from "../components/common/Menu";
 import "./MainLayout.css"; // Import CSS for styling
 
 const MainLayout = () => {

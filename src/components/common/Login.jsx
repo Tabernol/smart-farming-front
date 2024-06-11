@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { login } from "../../utils/auth";
 import "./Login.css"; // Import CSS for styling
 
 const Login = () => {
@@ -8,6 +10,7 @@ const Login = () => {
     });
 
     const [errors, setErrors] = useState({});
+    // const history = useHistory();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -34,9 +37,12 @@ const Login = () => {
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
         } else {
-            // Handle form submission (e.g., send data to the server)
+            // Simulate authentication
+            login("fake-jwt-token");
+            // history.push("/dashboard");
             console.log("Form data submitted:", formData);
         }
+
     };
 
     return (
