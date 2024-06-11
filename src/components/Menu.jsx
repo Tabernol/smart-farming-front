@@ -11,7 +11,7 @@ const Menu = () => {
             </div>
             <div className="auth-links">
                 <Link to="/sign-in">Sign In</Link>
-                <Link to="/sign-up">Sign Up</Link>
+                <Link to="/login">Login</Link>
             </div>
         </nav>
     );
